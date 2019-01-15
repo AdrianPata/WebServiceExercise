@@ -1,4 +1,4 @@
-package ro.pata.ws.exercise;
+package ro.pata.ws.test;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,8 +10,8 @@ import javax.xml.ws.soap.SOAPBinding;
 import java.util.Map;
 
 public class StudentTest {
-    private static QName SERVICE_NAME = new QName("http://exercise.ws.pata.ro/", "WsInt");
-    private static QName PORT_NAME = new QName("http://exercise.ws.pata.ro/", "WsIntPort");
+    private static QName SERVICE_NAME = new QName("http://test.ws.pata.ro/", "WsInt");
+    private static QName PORT_NAME = new QName("http://test.ws.pata.ro/", "WsIntPort");
 
     private Service service;
     private WsInt wsProxy;

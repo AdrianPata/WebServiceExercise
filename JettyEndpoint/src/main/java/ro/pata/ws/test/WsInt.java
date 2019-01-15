@@ -1,4 +1,4 @@
-package ro.pata.ws.exercise;
+package ro.pata.ws.test;
 
 import javax.jws.WebService;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;

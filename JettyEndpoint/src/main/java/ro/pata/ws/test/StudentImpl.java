@@ -1,4 +1,6 @@
-package ro.pata.ws.exercise;
+package ro.pata.ws.test;
+
+import ro.pata.ws.test.Student;
 
 import javax.xml.bind.annotation.XmlType;
 

@@ -1,4 +1,4 @@
-package ro.pata.ws.exercise;
+package ro.pata.ws.test;
 
 import javax.xml.ws.Endpoint;
 
