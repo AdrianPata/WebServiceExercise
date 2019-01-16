@@ -1,10 +1,10 @@
-package ro.pata.ws.test;
+package ro.pata.ws.test.jetty;
 
 import javax.jws.WebService;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@WebService(endpointInterface = "ro.pata.ws.test.WsInt")
+@WebService(endpointInterface = "ro.pata.ws.test.jetty.WsInt")
 public class WsImpl implements WsInt {
 
     private Map<Integer, Student> students

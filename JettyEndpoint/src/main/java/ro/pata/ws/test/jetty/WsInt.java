@@ -1,4 +1,4 @@
-package ro.pata.ws.test;
+package ro.pata.ws.test.jetty;
 
 import javax.jws.WebService;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
