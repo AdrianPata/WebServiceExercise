@@ -21,9 +21,25 @@
     <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>dbquery</servlet-name>
+    <servlet-class>ro.pata.ws.test.tomcat.servlet.dbquery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>dbadd</servlet-name>
+    <servlet-class>ro.pata.ws.test.tomcat.servlet.dbadd</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>WebServicePort</servlet-name>
     <url-pattern>/services/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>dbquery</servlet-name>
+    <url-pattern>/db/q1/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>dbadd</servlet-name>
+    <url-pattern>/db/q2/*</url-pattern>
   </servlet-mapping>
   <session-config>
     <session-timeout>60</session-timeout>

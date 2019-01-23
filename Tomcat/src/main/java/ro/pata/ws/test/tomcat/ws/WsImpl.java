@@ -1,10 +1,10 @@
-package ro.pata.ws.test.tomcat;
+package ro.pata.ws.test.tomcat.ws;
 
 import javax.jws.WebService;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@WebService(endpointInterface = "ro.pata.ws.test.tomcat.WsInt")
+@WebService(endpointInterface = "ro.pata.ws.test.tomcat.ws.WsInt")
 public class WsImpl implements WsInt {
 
     private Map<Integer, Student> students

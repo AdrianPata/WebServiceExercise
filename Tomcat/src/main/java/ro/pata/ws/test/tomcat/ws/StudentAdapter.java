@@ -1,4 +1,4 @@
-package ro.pata.ws.test.tomcat;
+package ro.pata.ws.test.tomcat.ws;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
