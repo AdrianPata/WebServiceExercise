@@ -16,6 +16,11 @@
     </listener-class>
   </listener>
 
+  <resource-env-ref>
+    <resource-env-ref-name>jdbc/TestDB</resource-env-ref-name>
+    <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+  </resource-env-ref>
+
   <servlet>
     <servlet-name>WebServicePort</servlet-name>
     <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
@@ -41,6 +46,7 @@
     <servlet-name>dbadd</servlet-name>
     <url-pattern>/db/q2/*</url-pattern>
   </servlet-mapping>
+
   <session-config>
     <session-timeout>60</session-timeout>
   </session-config>
