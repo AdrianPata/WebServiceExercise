@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://cxf.apache.org/jaxws
+http://cxf.apache.org/schemas/jaxws.xsd
+http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+    <jaxrs:server id="restContainer" address="/rest">
+        <jaxrs:serviceBeans>
+            <ref bean="testRs" />
+            <ref bean="agenda.list" />
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <ref bean="authenticationHandler" />
+        </jaxrs:providers>
+    </jaxrs:server>
+
+    <!--
+    <jaxws:endpoint id="dhsRequest" implementor="com.gemalto.cogent.emea.wsinterface.dhsbg.dhs.DhsRequest" address="/dhsRequest" >
+        <jaxws:handlers>
+            <bean id="dhsRequestAuthenticator" class="com.gemalto.cogent.emea.wsinterface.dhsbg.dhs.DhsRequestAuthenticator" />
+        </jaxws:handlers>
+    </jaxws:endpoint>
+    <jaxrs:server id="restContainer" address="/dhsRequestFingerprints">
+        <jaxrs:serviceBeans>
+            <ref bean="dhsRequestFingerprints" />
+        </jaxrs:serviceBeans>
+    </jaxrs:server>
+    -->
+</beans>
